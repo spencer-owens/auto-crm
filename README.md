@@ -1,6 +1,6 @@
 # README
 
-This repository contains a structured approach for building a new vite/react application (code-named “ChatGenius”). It follows a series of documents that guide you through project context, user flows, technology stack choices, and best practices before outlining a phased plan of development tasks.
+This repository contains a structured approach for building a new vite/react application that is a zendesk clone. It follows a series of documents that guide you through project context, user flows, technology stack choices, and best practices before outlining a phased plan of development tasks.
 
 ---
 

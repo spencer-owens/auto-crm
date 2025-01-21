@@ -1,22 +1,122 @@
-# README
+# Auto CRM
 
-This repository contains a structured approach for building a new vite/react application that is a zendesk clone. It follows a series of documents that guide you through project context, user flows, technology stack choices, and best practices before outlining a phased plan of development tasks.
+An AI-powered CRM system built with modern technologies for efficient customer relationship management.
 
----
+## Tech Stack
 
-## How @new-project-setup.md Works
+### Frontend
+- Vite + React + TypeScript
+- Tailwind CSS for styling
+- Shadcn UI + Radix UI for components
+- Zustand for state management
 
-The file [@new-project-setup.md](./docs/new-project-setup.md) provides a detailed sequence of steps and prompts, starting from a simple project overview and ending with a fully organized, phased approach to building the application. This file helps you:
+### Backend
+- FastAPI (Python)
+- Supabase for database and authentication
+- Python 3.9+
 
-1. Understand the overall goals and scope of the project (via the initial “Project Overview”).  
-2. Incrementally build supporting documents (user flow, tech stack decisions, UI/theme rules, etc.).  
-3. Embody best practices in folder structure, coding style, checklist-based development, and environment setup.  
-4. Follow a clearly defined, phase-by-phase plan for implementing each feature set in both frontend and backend contexts.
+## Project Structure
 
-By reading and following each step in @new-project-setup.md, you’ll quickly bootstrap a robust environment for ChatGenius, ensuring all participants or contributors operate with the same architectural understanding, coding guidelines, and clear objectives.
+```
+auto-crm/
+├── src/
+│   ├── frontend/        # React + Vite frontend
+│   │   ├── components/  # Reusable UI components
+│   │   ├── pages/      # Page components
+│   │   ├── hooks/      # Custom hooks and stores
+│   │   └── styles/     # Global styles and themes
+│   └── backend/        # FastAPI backend
+│       ├── api/        # API routes
+│       ├── services/   # Business logic
+│       └── models/     # Data models and schemas
+```
 
----
+## Getting Started
 
-If you have any questions or want to expand upon a particular feature or workflow, consult the corresponding doc under /docs for further context and instructions.
+### Prerequisites
+- Node.js 18+
+- Python 3.9+
+- npm or yarn
+- pip (Python package manager)
 
-Happy building!
+### Frontend Setup
+
+1. Navigate to the frontend directory:
+```bash
+cd src/frontend
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+The frontend will be available at `http://localhost:5173`
+
+### Backend Setup
+
+1. Navigate to the backend directory:
+```bash
+cd src/backend
+```
+
+2. Create and activate a virtual environment:
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows, use: venv\Scripts\activate
+```
+
+3. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+4. Start the FastAPI server:
+```bash
+uvicorn main:app --reload
+```
+
+The backend API will be available at `http://localhost:8000`
+
+### Environment Variables
+
+Create a `.env` file in both frontend and backend directories with the following variables:
+
+```env
+# Frontend (.env)
+VITE_API_URL=http://localhost:8000
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+
+# Backend (.env)
+SUPABASE_URL=your_supabase_url
+SUPABASE_SERVICE_KEY=your_supabase_service_key
+```
+
+## Development
+
+- Frontend development server runs on `http://localhost:5173`
+- Backend API server runs on `http://localhost:8000`
+- API documentation available at `http://localhost:8000/docs`
+
+## Features
+
+- Modern, responsive UI with dark mode support
+- Real-time data synchronization
+- AI-powered customer insights
+- Secure authentication via Supabase
+- RESTful API with FastAPI
+- Comprehensive documentation
+
+## Contributing
+
+Please read our contribution guidelines and code of conduct before submitting pull requests.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

@@ -50,7 +50,7 @@ Description: [Feature Description]
 
 ### Implementation Phase
 - [ ] Setup
-  - [ ] Verify layout in Next.js App Router
+  - [ ] Verify layout
   - [ ] Check shared states (Zustand)
 - Notes: [ Notes ]
 

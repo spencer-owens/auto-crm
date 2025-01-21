@@ -28,7 +28,7 @@ Description: [Feature Description]
 - [ ] Documentation Review
     - [ ] Tech stack guidelines (`tech-stack.md`, `tech-stack-rules.md`)
     - [ ] Existing services and utils (`services.ts`, `database.ts`, `feature/*/utils`)
-    - [ ] Data models (`lib/types`)
+    - [ ] Data models (`data-model.md`, `lib/types`)
     - [ ] Integration points (endpoints, auth boundaries)
     - [ ] Real-time features (presence, typing, notifications)
 - Notes: [ Notes ]
@@ -39,7 +39,7 @@ Description: [Feature Description]
     - [ ] API/route handler structure
     - [ ] Type definitions and Zod schemas
     - [ ] Real-time requirements
-    - [ ] Test specifications (per `test-rules.md`)
+    - [ ] Test specifications
     - [ ] PAUSE, Check in with user
 - Notes: [ Notes ]
 

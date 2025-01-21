@@ -31,7 +31,7 @@
    - Create actionable and implementation-ready set of requirements for our project.
 
 11. @tech-stack.md
-   - Describe the core technologies used (Node, Next.js, TypeScript, etc.) and their roles.
+   - Describe the core technologies used (React, Vite, TypeScript, etc.) and their roles.
 
 12. @tech-stack-rules.md
    - Lay out best practices, limitations, and conventions for using the selected technologies.
@@ -43,7 +43,7 @@
    - Establish theming foundations (colors, typography, animations) to be incorporated into UI development.
 
 15. @codebase-best-practices.md  
-   - Outline folder structure, file naming conventions, and Next.js App Router practices.
+   - Outline folder structure, file naming conventions, Vite/React practices.
 
 16. ./checklists/
    - Outline the different phases of the project, and the different tasks and features we'll need to complete in order to complete our goal. Each feature (or group of features) should have its own phase document.
@@ -108,7 +108,7 @@ Provide the file in markdown format.
 
 4. `o1`
 ```
-Use @project-overview.md, @user-stories.md, @project-map.md, and user-flow.md to create a document called `technical-requirements.md`, which should be a thorough and exhaustive list of technical requirements.
+Use @project-overview.md, @user-stories.md, @project-map.md, and @user-flow.md to create a document called `technical-requirements.md`, which should be a thorough and exhaustive list of technical requirements.
 
 Think step by step about:
 
@@ -137,10 +137,13 @@ Provide the file in markdown format.
 
 5. `claude` agent
 ```
-breakdown @technical-requirements into three additional documents:
+break down @technical-requirements into three additional documents:
+
 `data-model.md`
 `core-functionality.md`
 `important-considerations.md`
+
+Output these markdown files to /docs/project-info/
 ```
 
 
@@ -218,7 +221,7 @@ Provide the file in markdown format.
 ```
 I want to learn more about common design principles, and how they might be applied to our project.
 Give me a list of 15 possible themes (e.g. "minimalist", "retro", "futuristic", "glassmorphic", etc), with a description of each one.
-Observe @project-overview.md and @user-flow.md for context about the project to guide your recommendations.
+Observe @project-overview.md @user-flow.md, and @product-requirements for context about the project to guide your recommendations.
 ```
 
 
@@ -228,7 +231,7 @@ I want my project to be ____ (mobile-first, responsive, animated, etc). We need 
 
 Also, I have decided I want my theme to be ____ (minimalist, retro, futuristic, glassmorphic, etc).
 
-Use @user-flow.md, @tech-stack.md, and @tech-stack-rules.md to put together two new files, called `ui-rules.md` and `theme-rules.md`.
+Use @user-flow.md, @product-requirements, @tech-stack.md, and @tech-stack-rules.md to put together two new files, called `ui-rules.md` and `theme-rules.md`.
 ```
 
 
@@ -282,7 +285,7 @@ For each of the files attached, within each one, flatten its lists into a single
 ```
 
 
-14. `claude` ATTACH: `Agent Rules`, `phase-0-setup.md` (current phase doc), `ui-workflow.md` (one of our interactive workflow docs), `backend-workflow.md` (our other interactive workflow doc), and `codebase-best-practices.md` (just good to always have in context)
+19. `claude` ATTACH: `Agent Rules`, `phase-0-setup.md` (current phase doc), `ui-workflow.md` (one of our interactive workflow docs), `backend-workflow.md` (our other interactive workflow doc), and `codebase-best-practices.md` (just good to always have in context)
 ```
 Let's get started on our project.
 ```

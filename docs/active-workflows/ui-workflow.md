@@ -32,7 +32,7 @@ Description: [Feature Description]
     - [ ] UI guidelines from `ui-rules.md`
     - [ ] Theming guidelines from `theme-rules.md`
     - [ ] Relevant component strategies (shadcn/ui, Radix, Tailwind)
-    - [ ] UX directives (glassmorphism, transitions, presence)
+    - [ ] UX directives (minimalism, transitions, presence)
 - [ ] Implementation Plan
   - [ ] Theming approach
   - [ ] Accessibility requirements
@@ -50,7 +50,7 @@ Description: [Feature Description]
 
 ### Implementation Phase
 - [ ] Setup
-  - [ ] Verify layout in Next.js App Router
+  - [ ] Verify layout
   - [ ] Check shared states (Zustand)
 - Notes: [ Notes ]
 
